@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "observer": "node dist/observer/main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "decorator": "node dist/decorator/main.js",
+    "decorator-test": "mocha -r ts-node/register src/decorator/**/test.ts"
   },
   "repository": {
     "type": "git",
@@ -15,9 +16,15 @@
   },
   "homepage": "https://github.com/sergiovhe/typescript-patterns#readme",
   "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.42",
+    "chai": "^4.1.1",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-typescript": "^3.2.1",
-    "typescript": "^2.4.2"
+    "mocha": "^3.5.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.4.2",
+    "typings": "^2.1.1"
   }
 }
