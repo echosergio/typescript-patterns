@@ -9,16 +9,14 @@ import { WithOrujo } from './with-orujo';
 import { expect } from 'chai';
 import 'mocha';
 
-describe('Simple coffee', () => {
+describe('Drinks', () => {
     it('should return the price of a single coffee', () => {
 
         var drink = new Coffee();
 
         expect(Math.round(drink.getCost()*100)/100).to.equal(1);
     });
-});
-
-describe('Carajillo', () => {
+    
     it('should return the price of a coffee with orujo', () => {
 
         var drink = new Coffee();
@@ -26,18 +24,14 @@ describe('Carajillo', () => {
 
         expect(Math.round(drink.getCost()*100)/100).to.equal(2);
     });
-});
 
-describe('Simple chocolate', () => {
     it('should return the price of a single chocolate', () => {
 
         var drink = new Chocolate();
 
         expect(Math.round(drink.getCost()*100)/100).to.equal(1.2);
     });
-});
 
-describe('Chocolate with cinnamon', () => {
     it('should return the price of a chocolate with cinnamon', () => {
 
         var drink = new Chocolate();
@@ -45,9 +39,7 @@ describe('Chocolate with cinnamon', () => {
 
         expect(Math.round(drink.getCost()*100)/100).to.equal(1.35);
     });
-});
 
-describe('Coffee with soya', () => {
     it('should return the price of a coffee with soya', () => {
 
         var drink = new Coffee();
@@ -55,9 +47,7 @@ describe('Coffee with soya', () => {
 
         expect(Math.round(drink.getCost()*100)/100).to.equal(1.20);
     });
-});
 
-describe('Coffee with milk and cream', () => {
     it('should return the price of a coffee with milk and cream', () => {
 
         var drink = new Coffee();
@@ -66,9 +56,7 @@ describe('Coffee with milk and cream', () => {
 
         expect(Math.round(drink.getCost()*100)/100).to.equal(1.60);
     });
-});
 
-describe('Coffee with double of milk, cream and orujo', () => {
     it('should return the price of a coffee with double of milk, cream and orujo', () => {
 
         var drink = new Coffee();

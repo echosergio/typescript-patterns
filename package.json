@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "observer": "node dist/observer/main.js",
-    "decorator": "node dist/decorator/main.js",
-    "decorator-test": "mocha -r ts-node/register src/decorator/**/test.ts"
+    "decorator-test": "mocha -r ts-node/register src/decorator/**/test.ts",
+    "composite-test": "mocha -r ts-node/register src/composite/**/test.ts"
   },
   "repository": {
     "type": "git",
